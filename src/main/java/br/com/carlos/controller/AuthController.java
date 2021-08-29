@@ -64,6 +64,7 @@ public class AuthController {
 			return ok(model);
 			
 		} catch (AuthenticationException e) {
+			System.out.println(e);
 			throw new BadCredentialsException("Invalid username/password supplied");
 		}
 	}

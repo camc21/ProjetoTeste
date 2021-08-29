@@ -118,7 +118,7 @@ public class Login implements UserDetails, Serializable {
 	
 	public Login(LoginDTO loginDto) {
 		this.idLogin = loginDto.getIdLogin();
-		this.userName = loginDto.getUserName();
+		this.userName = loginDto.getUsername();
 		this.password = loginDto.getPassword();
 		List<Permission> permissions = new ArrayList<>();
 		for (String permissionDto : loginDto.getPermissions()) {

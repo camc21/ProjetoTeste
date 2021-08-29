@@ -18,9 +18,9 @@ import br.com.carlos.dto.AnimeDTO;
 import br.com.carlos.model.Anime;
 import br.com.carlos.service.AnimeService;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping(value = "api/anime")
+@RequestMapping("/api/anime")
 public class AnimeController {
 
     @Autowired

@@ -17,7 +17,7 @@ public class LoginDTO implements Serializable {
 
 	private Long idLogin;
 
-	private String userName;
+	private String username;
 
 	private String password;
 	
@@ -25,7 +25,7 @@ public class LoginDTO implements Serializable {
 	
 	public LoginDTO(Long idLogin, String userName, String password, String description) {
 		this.idLogin = idLogin;
-		this.userName = userName;
+		this.username = userName;
 		this.password = password;
 		List<String> permissions = new ArrayList<>();
 		permissions.add(description);
